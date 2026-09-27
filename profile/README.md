@@ -10,7 +10,7 @@ La organización reúne los proyectos, herramientas y recursos relacionados con 
 
 Motor gráfico desarrollado principalmente en C++ utilizando OpenGL.
 
-Repositorio principal:
+Repositorio principal con API OpenGL:
 
 https://github.com/FunshiEngine/FunshiEngineOpenGL
 
