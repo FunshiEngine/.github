@@ -17,13 +17,10 @@ https://github.com/FunshiEngine/FunshiEngineOpenGL
 ## Tecnologías
 
 - C++
+- Java
 - OpenGL
-- CMake
-- ImGui
-- Bullet Physics
-- Assimp
-- Java / JNI
-- CI multiplataforma
+- Vulkan
+
 
 ## Contribuciones
 
