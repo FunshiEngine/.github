@@ -1,0 +1,85 @@
+name: Reportar un error
+description: Reporta un error reproducible en FunshiEngine
+title: "[BUG] "
+labels:
+  - bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar un error.
+
+        Antes de continuar, comprueba que el problema no haya sido reportado anteriormente.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción
+      description: Describe claramente el problema.
+      placeholder: Explica qué está ocurriendo.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Pasos para reproducir
+      description: Indica los pasos necesarios para reproducir el problema.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento esperado
+      description: ¿Qué debería ocurrir?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamiento actual
+      description: ¿Qué ocurre actualmente?
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Sistema operativo
+      placeholder: Windows 11 / Ubuntu 24.04 / macOS 15
+    validations:
+      required: true
+
+  - type: input
+    id: compiler
+    attributes:
+      label: Compilador
+      placeholder: MSVC / GCC / Clang
+    validations:
+      required: true
+
+  - type: input
+    id: cmake
+    attributes:
+      label: Versión de CMake
+      placeholder: "4.x.x"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs y mensajes de error
+      description: Incluye cualquier log relevante.
+      render: shell
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Información adicional
+      description: Añade capturas, vídeos u otra información útil.
