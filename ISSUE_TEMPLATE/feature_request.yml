@@ -1,0 +1,51 @@
+name: Solicitar una funcionalidad
+description: Propón una nueva funcionalidad o mejora para FunshiEngine
+title: "[FEATURE] "
+labels:
+  - enhancement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por proponer una mejora para FunshiEngine.
+
+        Las propuestas deben explicar claramente el problema que intentan solucionar y el comportamiento esperado.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: ¿Qué problema o necesidad intenta solucionar esta funcionalidad?
+      placeholder: Describe el problema.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta
+      description: Describe la funcionalidad que propones.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Caso de uso
+      description: Describe cómo se utilizaría esta funcionalidad.
+      placeholder: |
+        Ejemplo:
+        Un desarrollador podría...
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: Describe otras soluciones que hayas considerado.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Información adicional
+      description: Añade cualquier detalle, ejemplo, referencia o propuesta técnica relevante.
